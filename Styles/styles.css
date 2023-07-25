@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Condensed:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    font-weight: 200;
+    font-family: 'Caprasimo', cursive;
+}
+.menu {
+    list-style-type: none;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu li a {
+
+color: rgb(171, 3, 3);
+}
+
+main {
+    padding: 10px;
+
+}
+
+/*cartitas */ 
+
+.cartita {
+    width: 300px;
+    background-color: rgb(218, 203, 203);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.cartita_imagen {
+    width: 100%;
+}
+
+.caja {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(78, 89, 172);
+    margin: 20px 40px 60px 60px;
+    padding: 20px 20px 20px 20px; 
+      
+    background-image: url(./../Logo/Tapitol-Logo1.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position:  center center;
+}
+.caja p {
+   text-decoration: aqua;
+}
+
+
+/*contacto*/
+
+body{
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    min-height: 100vh;
+    
+    
+}
+.Contacto{
+    padding: 6rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items:center;
+}
+.Contacto{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+       "nombre Email"
+       "mensaje Enviar";
+       width: 36rem;
+       gap: 1rem;
+}
+
+.Contacto  input{
+    padding: .75rem 1rem;
+    font-family: 'Caprasimo', cursive;
+    font-weight: 300;
+    color: black;
+}
+
+.Contacto .nombre {
+    grid-area: nombre;
+}
+
+.Contacto .Email {
+    grid-area: Email
+}
+
+.Contacto .mensaje {
+        grid-area: mensaje
+} 
+
+.Contacto .Enviar {
+    grid-area: Enviar;
+    border: 0;
+    background-color: red;
+    font-family:  'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+}
+
+
+/**** footer ****/
+
+footer {
+    padding: 6rem;
+    padding-top: 0;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Logo/inicio/arlington-3.jpg.webp") ;
+    background-size: cover;
+    background-position: center center;
+    color:  #c27808;
+    padding: 2rem;
+}
+footer h2,
+footer p {
+    color: #c27808;
+}
+
+.footer_top > div {
+    flex: 1;
+}
+
+
+.footer_top h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.footer_top p{
+    font-family: 'Caprasimo', cursive; 
+}
+ .footer_top{
+    display: flex;
+}
+
+
+@media (max-width: 480px) {
+
+    .hero_header {
+        flex-direction: columns;
+        gap: 2rem;
+    }
+    .header_right {
+        align-items: flex-start;
+    }
+
+    .Contacto {
+        width: 70%;
+        display:flex;
+        flex-direction: column ;
+    }
+    footer {
+        padding: 2rem;
+    }
+    .footer_top {
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+    }
+}

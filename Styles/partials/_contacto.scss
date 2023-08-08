@@ -1,0 +1,56 @@
+
+body{
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    
+}
+.Contacto{
+    padding: 20rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items:center;
+    margin:top;
+}
+.Contacto{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+       "nombre Email"
+       "mensaje Enviar";
+       width: 36rem;
+       gap: 1rem;
+}
+
+.Contacto  input{
+    padding: .75rem 1rem;
+    font-family: 'Caprasimo', cursive;
+    font-weight: 300;
+    color: black;
+}
+
+.Contacto .nombre {
+    grid-area: nombre;
+}
+
+.Contacto .Email {
+    grid-area: Email
+}
+
+.Contacto .mensaje {
+        grid-area: mensaje
+} 
+
+.Contacto .Enviar {
+    grid-area: Enviar;
+    border: 0;
+    background-color: red;
+    font-family:  'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+}

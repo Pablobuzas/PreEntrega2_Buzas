@@ -1,0 +1,51 @@
+ .hero {
+
+    .logo {
+        font-weight: 200;
+        font-family: 'Caprasimo', cursive;
+    }
+    .menu {
+        list-style-type: none;
+        font-family: 'Caprasimo', cursive;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+    }
+    
+    .menu li {
+        -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .menu li a {
+
+        color: rgb(171, 3, 3);
+        }
+        
+        
+        .caja p{
+            font-family: 'Caprasimo', cursive; 
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            font-size: 3rem;
+        }
+        
+        .empresatxt p{
+            font-family: 'Caprasimo', cursive; 
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            font-size: 3rem;
+        }
+        
+        main {
+            padding: 0%;
+        }
+
+ }
+
+ 
+
+@-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
